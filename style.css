@@ -46,13 +46,14 @@ body {
     display: none;
     position: absolute;
     top: 60px;
-    right: 0;
-    background: #282c34;
+    right: 10px;
+    background: #333;
     flex-direction: column;
     padding: 1rem;
+    border-radius: 10px;
     z-index: 99;
   }
-  .menu-open .nav-links {
+  .nav-links.show {
     display: flex;
   }
   .hamburger {
