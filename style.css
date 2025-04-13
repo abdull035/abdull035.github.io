@@ -2,7 +2,11 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background: #fdfdfd;
+  color: #222;
   transition: background 0.4s, color 0.4s;
+}
+.dark {
   background: #121212;
   color: #f1f1f1;
 }
@@ -11,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #1e1e1e;
+  background: #282c34;
   color: white;
   position: relative;
 }
@@ -19,17 +23,9 @@ body {
   display: flex;
   gap: 1rem;
 }
-.nav-links a {
+.navbar a {
   color: white;
   text-decoration: none;
-}
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
 #theme-toggle {
   background: none;
@@ -37,6 +33,31 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   color: white;
+}
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #282c34;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 99;
+  }
+  .menu-open .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
 }
 .hero {
   text-align: center;
@@ -67,44 +88,27 @@ section {
 .project-card {
   padding: 1rem;
   border-radius: 10px;
-  background: #1f1f1f;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  background: #f5f5f5;
+  transition: transform 0.3s;
 }
 .project-card:hover {
   transform: scale(1.02);
 }
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1e1e1e;
-  color: white;
+.dark .project-card {
+  background: #1f1f1f;
 }
 .fade-in {
   opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 0.2s;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0px);
 }
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #1e1e1e;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  .nav-links.open {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-  }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #282c34;
+  color: white;
 }
