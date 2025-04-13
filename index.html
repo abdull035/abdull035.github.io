@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div id="particles-js"></div>
+
   <nav class="navbar">
     <div class="nav-title">Abdullah Ahmed</div>
     <button class="hamburger" onclick="toggleMenu()">☰</button>
@@ -22,7 +24,7 @@
     <img src="assets/profile.jpg" alt="Profile" class="profile-pic"/>
     <h1>Hi, I'm Abdullah 👋</h1>
     <p>Software Engineer | Backend Developer | Cloud Enthusiast</p>
-    <a href="assets/Abdullah_Ahmed_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+    <a href="assets/Abdullah_Ahmed_Resume.pdf" class="btn glow" target="_blank">Download Resume</a>
   </header>
 
   <main>
@@ -36,22 +38,61 @@
       <div class="project-card">
         <h3>Software Engineer – Walmart Labs (2021–Present)</h3>
         <ul>
+      <li><strong>Walmart Labs:</strong> Backend development on internal Sam’s Club Wingman application providing pricing insights and price management. Developed and performance-tested APIs/services for UI integration. Participated in weekly on-call rotations and production issue resolution.</li>
+      <li><strong>IBM:</strong> Developed and maintained automation scripts for IBM Financing Sales-Enablement app. Utilized Java, Selenium, and TestNG for multi-threaded test automation and frontend work with JSP.</li>
+      <li><strong>Hubbell:</strong> Created a responsive web application for Hipotronics customers to register and test equipment. Presented features to multiple internal teams for feedback and feature expansion.</li>
+      <li><strong>Boehringer Ingelheim:</strong> Contributed to pharmaceutical R&D software tools. Assisted with automation, internal optimization, and collaboration across teams on digital solutions.</li>
+    
           <li>Backend dev for Sam’s Club Wingman app (pricing analytics, performance, API design).</li>
           <li>Collaborated with vendors & internal teams for feature development and production rollout.</li>
           <li>Tech: Java, Spring Boot, Azure, Kubernetes, React, CI/CD, Jenkins.</li>
         </ul>
         <h3>Software Developer – IBM (2020–2021)</h3>
         <ul>
+      <li><strong>Walmart Labs:</strong> Backend development on internal Sam’s Club Wingman application providing pricing insights and price management. Developed and performance-tested APIs/services for UI integration. Participated in weekly on-call rotations and production issue resolution.</li>
+      <li><strong>IBM:</strong> Developed and maintained automation scripts for IBM Financing Sales-Enablement app. Utilized Java, Selenium, and TestNG for multi-threaded test automation and frontend work with JSP.</li>
+      <li><strong>Hubbell:</strong> Created a responsive web application for Hipotronics customers to register and test equipment. Presented features to multiple internal teams for feedback and feature expansion.</li>
+      <li><strong>Boehringer Ingelheim:</strong> Contributed to pharmaceutical R&D software tools. Assisted with automation, internal optimization, and collaboration across teams on digital solutions.</li>
+    
           <li>Automation scripting, frontend (JSP), and multi-threaded test simulations using Java & Selenium.</li>
         </ul>
         <h3>Intern – Hubbell (Summer 2020)</h3>
         <ul>
+      <li><strong>Walmart Labs:</strong> Backend development on internal Sam’s Club Wingman application providing pricing insights and price management. Developed and performance-tested APIs/services for UI integration. Participated in weekly on-call rotations and production issue resolution.</li>
+      <li><strong>IBM:</strong> Developed and maintained automation scripts for IBM Financing Sales-Enablement app. Utilized Java, Selenium, and TestNG for multi-threaded test automation and frontend work with JSP.</li>
+      <li><strong>Hubbell:</strong> Created a responsive web application for Hipotronics customers to register and test equipment. Presented features to multiple internal teams for feedback and feature expansion.</li>
+      <li><strong>Boehringer Ingelheim:</strong> Contributed to pharmaceutical R&D software tools. Assisted with automation, internal optimization, and collaboration across teams on digital solutions.</li>
+    
           <li>Built a responsive registration app for test equipment; demoed features to cross-functional teams.</li>
         </ul>
         <h3>Co-Op – Boehringer Ingelheim</h3>
         <ul>
+      <li><strong>Walmart Labs:</strong> Backend development on internal Sam’s Club Wingman application providing pricing insights and price management. Developed and performance-tested APIs/services for UI integration. Participated in weekly on-call rotations and production issue resolution.</li>
+      <li><strong>IBM:</strong> Developed and maintained automation scripts for IBM Financing Sales-Enablement app. Utilized Java, Selenium, and TestNG for multi-threaded test automation and frontend work with JSP.</li>
+      <li><strong>Hubbell:</strong> Created a responsive web application for Hipotronics customers to register and test equipment. Presented features to multiple internal teams for feedback and feature expansion.</li>
+      <li><strong>Boehringer Ingelheim:</strong> Contributed to pharmaceutical R&D software tools. Assisted with automation, internal optimization, and collaboration across teams on digital solutions.</li>
+    
           <li>Worked on software tools for pharmaceutical research and development. Assisted in internal tool optimization and automation tasks.</li>
         </ul>
+      </div>
+    
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">Java</div>
+        <div class="skill-item">SQL</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Spring Boot</div>
+        <div class="skill-item">React</div>
+        <div class="skill-item">CI/CD (Jenkins)</div>
+        <div class="skill-item">Azure</div>
+        <div class="skill-item">Kubernetes</div>
+        <div class="skill-item">Git/Bitbucket</div>
+        <div class="skill-item">MySQL Workbench</div>
+        <div class="skill-item">Postman</div>
+        <div class="skill-item">Unix</div>
       </div>
     </section>
   </main>
@@ -75,6 +116,23 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        color: { value: "#ffffff" },
+        line_linked: { enable: true, color: "#ffffff" },
+        move: { speed: 1 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
   </script>
 </body>
 </html>
