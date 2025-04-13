@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,16 @@
 <body>
   <nav class="navbar">
     <div class="nav-title">Abdullah Ahmed</div>
-    <div class="nav-links">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="nav-links" id="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="https://www.linkedin.com/in/aahmed2/" target="_blank">LinkedIn</a>
     </div>
-    <button id="theme-toggle">🌙</button>
+    <button id="theme-toggle">☀️</button>
   </nav>
 
-  <header class="hero">
+  <header class="hero fade-in">
     <img src="assets/profile.jpg" alt="Profile" class="profile-pic" />
     <h1>Hi, I'm Abdullah 👋</h1>
     <p>Software Engineer | Backend Development | Cloud Tools</p>
@@ -25,12 +26,12 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
       <p>I'm a computer science graduate passionate about backend development, scalable systems, and cloud infrastructure. I enjoy solving complex problems, collaborating with cross-functional teams, and leveraging tools like Java, Spring Boot, Azure, and SQL to deliver robust solutions.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="fade-in">
       <h2>Professional Experience</h2>
       <div class="project-card">
         <h3>Software Engineer – Walmart Labs (2021–Present)</h3>
@@ -61,8 +62,16 @@
 
   <script>
     const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
     toggle.onclick = () => {
-      document.body.classList.toggle("dark");
+      body.classList.toggle("dark");
+      toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+    };
+
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    hamburger.onclick = () => {
+      navLinks.classList.toggle("open");
     };
   </script>
 </body>
