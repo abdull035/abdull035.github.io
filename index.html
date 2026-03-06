@@ -3,66 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdullah Ahmed – Portfolio</title>
+  <title>Abdullah Ahmed – Senior Software Engineer</title>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-    .nav-links {
-      margin-left: auto;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="particles-js"></div>
 
   <nav class="navbar">
     <div class="nav-title">Abdullah Ahmed</div>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
     <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="https://www.linkedin.com/in/aahmed2/" target="_blank">LinkedIn</a>
     </div>
   </nav>
 
   <header class="hero">
     <img src="assets/profile.jpg" alt="Profile" class="profile-pic"/>
-    <h1>Hi, I'm Abdullah 👋</h1>
-    <p>Software Engineer | Backend Developer | Dallas</p>
+    <h1>Hi, I'm Abdullah</h1>
+    <p class="hero-subtitle">Senior Software Engineer @ HubSpot | Dallas-Fort Worth</p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">View My Work</a>
+      <a href="https://www.linkedin.com/in/aahmed2/" target="_blank" class="btn btn-outline">Connect on LinkedIn</a>
+    </div>
   </header>
 
   <main>
     <section id="about" class="fade-in">
       <h2>About Me</h2>
-      <p>I'm a computer science graduate passionate about backend development, scalable systems, and cloud infrastructure. I enjoy solving complex problems, collaborating with cross-functional teams, and leveraging tools like Java, Spring Boot, Azure, and SQL to deliver robust solutions.</p>
+      <p>Software Engineer with 5 years of experience building scalable backend systems. Passionate about backend development, cloud infrastructure, and solving complex problems. Currently a backend owner for HubSpot's pricing page infrastructure, previously built core microservices at Walmart powering Sam's Club's real-time pricing platform.</p>
     </section>
 
     <section id="experience" class="fade-in">
       <h2>Professional Experience</h2>
-      <div class="project-card">
-        <h3>Software Engineer – Walmart Labs (2021–Present)</h3>
-        <ul>
-          <li>Developed and optimized backend services for Sam’s Club's Wingman application, focusing on pricing analytics and performance.</li>
-          <li>Collaborated with cross-functional teams, including vendors, to ensure seamless feature development and production support.</li>
-          <li>Participated in on-call rotations, addressing production issues promptly.</li>
-          <li><strong>Technologies:</strong> Java, Spring Boot, Azure, React, Kubernetes, Jenkins, CI/CD pipelines.</li>
-        </ul>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Aug 2025 – Present</span>
+            <h3>Senior Software Engineer – HubSpot</h3>
+            <ul>
+              <li>Backend owner for HubSpot's pricing page infrastructure powering pricing logic and plan configuration across monetization workflows.</li>
+              <li>Built and evolved services supporting dynamic pricing, packaging rules, and product entitlements at scale.</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Java</span><span>Apache Kafka</span>
+            </div>
+          </div>
+        </div>
 
-        <h3>Software Developer – IBM (2020–2021)</h3>
-        <ul>
-          <li>Created automation scripts for IBM Financing web tools, supporting multi-region test environments.</li>
-          <li>Contributed to frontend components using JSP and enhanced QA simulations through multithreading techniques.</li>
-          <li><strong>Technologies:</strong> Java, Selenium, TestNG, JSP.</li>
-        </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Apr 2023 – Aug 2025</span>
+            <h3>Software Engineer III – Walmart Global Tech</h3>
+            <ul>
+              <li>Owned core microservices powering Sam's Club's real-time pricing infrastructure, processing millions of daily events with high availability and low latency.</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Microservices</span><span>Back-End Web Development</span>
+            </div>
+          </div>
+        </div>
 
-        <h3>Intern – Hubbell (Summer 2020)</h3>
-        <ul>
-          <li>Built a responsive web application for Hipotronics customers to register and test equipment.</li>
-          <li>Coordinated with multiple departments to gather feedback and iteratively improve the platform.</li>
-        </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2021 – Apr 2023</span>
+            <h3>Software Engineer II – Walmart Global Tech</h3>
+            <ul>
+              <li>Built and scaled backend services for Sam's Club's real-time pricing platform, processing millions of events daily with high availability.</li>
+            </ul>
+          </div>
+        </div>
 
-        <h3>Co-Op – Boehringer Ingelheim</h3>
-        <ul>
-          <li>Supported pharmaceutical R&D software workflows by assisting in automation tasks and feature testing.</li>
-          <li>Contributed to internal tool enhancements in a cross-functional setting.</li>
-        </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 – 2021</span>
+            <h3>Software Developer – IBM</h3>
+            <ul>
+              <li>Created automation scripts for IBM Financing web tools, supporting multi-region test environments.</li>
+              <li>Contributed to frontend components using JSP and enhanced QA simulations through multithreading techniques.</li>
+            </ul>
+            <div class="tech-tags">
+              <span>Java</span><span>Selenium</span><span>TestNG</span><span>JSP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Summer 2020</span>
+            <h3>Intern – Hubbell</h3>
+            <ul>
+              <li>Built a responsive web application for Hipotronics customers to register and test equipment.</li>
+              <li>Coordinated with multiple departments to gather feedback and iteratively improve the platform.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Co-Op</span>
+            <h3>Software Developer – Boehringer Ingelheim</h3>
+            <ul>
+              <li>Supported pharmaceutical R&D software workflows by assisting in automation tasks and feature testing.</li>
+              <li>Contributed to internal tool enhancements in a cross-functional setting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Iona College</h3>
+        <p class="edu-detail">B.S. Computer Science, Concentration in Cybersecurity</p>
+        <p class="edu-detail">Minor in Mathematics | GPA: 3.8/4.0 | Dean's List</p>
+        <p class="edu-dates">2017 – 2021</p>
       </div>
     </section>
 
@@ -73,13 +140,13 @@
         <div class="skill-item">SQL</div>
         <div class="skill-item">Python</div>
         <div class="skill-item">Spring Boot</div>
+        <div class="skill-item">Apache Kafka</div>
+        <div class="skill-item">Microservices</div>
         <div class="skill-item">React</div>
         <div class="skill-item">CI/CD (Jenkins)</div>
         <div class="skill-item">Azure</div>
         <div class="skill-item">Kubernetes</div>
-        <div class="skill-item">Git/Bitbucket</div>
-        <div class="skill-item">MySQL Workbench</div>
-        <div class="skill-item">Postman</div>
+        <div class="skill-item">Git</div>
         <div class="skill-item">Unix</div>
       </div>
     </section>
@@ -95,6 +162,19 @@
       nav.classList.toggle("show");
     }
 
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById("navLinks").classList.remove("show");
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -106,15 +186,21 @@
   <script>
     particlesJS("particles-js", {
       particles: {
-        number: { value: 50 },
-        size: { value: 3 },
-        color: { value: "#ffffff" },
-        line_linked: { enable: true, color: "#ffffff" },
-        move: { speed: 1 }
+        number: { value: 60, density: { enable: true, value_area: 900 } },
+        size: { value: 2.5, random: true },
+        color: { value: "#4ea3ff" },
+        opacity: { value: 0.4, random: true },
+        line_linked: { enable: true, color: "#4ea3ff", opacity: 0.15, width: 1 },
+        move: { speed: 0.8, direction: "none", out_mode: "out" }
       },
       interactivity: {
         events: {
-          onhover: { enable: true, mode: "repulse" }
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 150, line_linked: { opacity: 0.4 } },
+          push: { particles_nb: 3 }
         }
       }
     });
